@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ExcelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,8 @@ Route::get('/get-stock-years', [App\Http\Controllers\HomeController::class, 'get
 // Route::get('/get-pie-chart-data', [App\Http\Controllers\HomeController::class,'getPieChartData'])->name('getPieChartData');
 // Route::get('/getCompanyShareData', [App\Http\Controllers\HomeController::class,'getCompanyShareData'])->name('getCompanyShareData');
 Route::post('/fetchdata', [App\Http\Controllers\HomeController::class, 'fetchdata'])->name('fetchdata');
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'search'])->name('search');
 

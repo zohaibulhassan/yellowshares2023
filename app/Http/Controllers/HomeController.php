@@ -139,23 +139,6 @@ class HomeController extends Controller
         return view('registerModel');
     }
 
-    // public function download($companyId)
-    // {
-    //     $fileName = 'company_share_data.xlsx';
-
-    //     $export = new CompanyShareDataExport($companyId);
-
-    //     return Response::streamDownload(function () use ($export) {
-    //         $export->store('public');
-    //     }, $fileName);
-    // }
-
-    // public function download($companyId)
-    // {
-    //     $fileName = 'company_share_data.xlsx';
-
-    //     return (new CompanyShareDataExport($companyId))->download($fileName);
-    // }
-
+    
 
 }
